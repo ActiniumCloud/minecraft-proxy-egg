@@ -1,6 +1,0 @@
-serverName: server2.example.com
-    proxyHost: 123.123.123.124
-    proxyPort: 26669
-    version: 1.16.5
-    handlePing: false
-    useProxy: true # Use PROXY protocol. When the back-end server is Bungee, with bungee enabled, can correctly obtain the actual client IP.

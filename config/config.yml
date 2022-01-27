@@ -13,8 +13,25 @@ blockList:
   uuids: # Block list of uuids
     - 12b8b9e0eba0ca37e935f037ff1ae90d
 servers: # Don't touch if you don't know what you are doing.
-  !!import/sequence
-  - servers/
-profileEndpoint: https://api.mojang.com/profiles/minecraft # Profile endpoint. Don't change if you don't know what you are doing.
+
+  - serverName: server.example.com # Hostname to connect the server
+    proxyHost: 123.123.123.123 # Back-end server actual IP
+    proxyPort: 25568 # Back-end server actual port
+    version: 1.18.1
+    handlePing: true # Whether to take over the ping response
+    onlineMode: true
+    ping: # Required when taking over pings
+      maxPlayer: 100 # Max players
+      description: motd # motd
+      favicon: data:image/png;base64, # No need to set it if you don't have it
+
+  - serverName: server2.example.com # Hostname to connect the server
+    proxyHost: 123.123.123.124 # Back-end server actual IP
+    proxyPort: 25569 # Back-end server actual port
+    version: 1.16.5
+    handlePing: false # Whether to take over the ping response
+    onlineMode: true
+  
+profileEndpoint: https://api.minetools.eu/profiles/ # Profile endpoint. Don't change if you don't know what you are doing.
 plugins: # Don't touch if you don't know what you are doing.
 #  - test
