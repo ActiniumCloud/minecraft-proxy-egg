@@ -8,9 +8,9 @@ ActiniumProxy is more like NGINX. BungeeCord's goal is to use multiple Minecraft
 
 #### Closed source at the moment
 
-### Install
+## Install
 
-#### Install on pterodactyl
+### Install on pterodactyl
 
 Soon
 
