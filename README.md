@@ -12,5 +12,5 @@ ActiniumProxy is more like NGINX. BungeeCord's goal is to use multiple Minecraft
 
 ### Installation on pterodactyl
 
-[Google Drive](https://drive.google.com/file/d/1Gucpo8o5cWijXjgI3YrEXZeEFwETBpQ4/view)
+[Pterodactyl egg - Google Drive](https://drive.google.com/file/d/1Gucpo8o5cWijXjgI3YrEXZeEFwETBpQ4/view)
 
