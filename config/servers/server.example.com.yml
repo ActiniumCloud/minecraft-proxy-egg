@@ -1,0 +1,10 @@
+serverName: server.example.com # Hostname to connect the server
+    proxyHost: 123.123.123.123 # Back-end server actual IP
+    proxyPort: 25568 # Back-end server actual port
+    version: 1.18.1
+    handlePing: true # Whether to take over the ping response
+    onlineMode: true
+    ping: # Required when taking over pings
+      maxPlayer: 100 # Max players
+      description: motd # motd
+      favicon: data:image/png;base64, # No need to set it if you don't have it
