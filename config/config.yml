@@ -1,0 +1,36 @@
+proxy:
+  port: 25565 # Don't touch this. This is automatic
+  host: 0.0.0.0 # Don't touch this. This is automatic
+  workers: 0 # Don't touch this. This is automatic
+defaultServer: localhost # Default server. Delete this line if you don't want to specify it
+servers:
+
+  - serverName: server.example.com # Hostname to connect the server
+    proxyHost: 123.123.123.123 # Back-end server actual IP
+    proxyPort: 25568 # Back-end server actual port
+    version: 1.18.1
+    handlePing: true # Whether to take over the ping response
+    onlineMode: true
+    ping: # Required when taking over pings
+      maxPlayer: 100 # Max players
+      description: motd # motd
+      favicon: data:image/png;base64, # No need to set it if you don't have it
+
+  - serverName: server2.example.com
+    proxyHost: 123.123.123.124
+    proxyPort: 26669
+    version: 1.16.5
+    handlePing: false
+    useProxy: true # Use PROXY protocol. When the back-end server is Bungee, with bungee enabled, can correctly obtain the actual client IP.
+
+blockList:
+  ips: # Block list of IPs
+    - 114.114.114.114
+    - 10.0.0.0/32
+  usernames: # Block list of usernames
+    - BadGuys
+    - ExampleGuys
+  uuids: # Block list of uuids
+    - 12b8b9e0eba0ca37e935f037ff1ae90d
+
+profileEndpoint: https://api.mojang.com/profiles/minecraft # Profile endpoint. Don't change if you don't know what you are doing.
