@@ -1,5 +1,5 @@
 proxy:
-  port: 25565 # Don't touch this. This is automatic
+  port: 25565 # Change this to your MCloadBalancer instance port
   host: 0.0.0.0 # Don't touch this. This is automatic
   workers: 0 # Don't touch this. This is automatic
 defaultServer: localhost # Default server. Delete this line if you don't want to specify it
